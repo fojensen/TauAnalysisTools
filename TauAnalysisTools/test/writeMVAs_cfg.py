@@ -82,7 +82,7 @@ if updateAntiMuonDiscrMVA:
         )
     process.writeMVAsSequence += process.writeAntiMuonDiscrSequence
 if updateTauIdDiscrMVA:
-    process.load('TauAnalysisTools/TauAnalysisTools/writeTauIdDiscrMVA_cfi')
+    process.load('TauAnalysisTools/TauAnalysisTools/writeTauIdDiscrMVA_Phase2_cfi')
     for training in process.writeTauIdDiscrMVAs.jobs:
         process.PoolDBOutputService.toPut.append(
             cms.PSet(
